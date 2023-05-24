@@ -1,0 +1,34 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+<h1>Contactos</h1>
+<ul>
+    <li th:each="contacto : ${contactos}">
+        <span th:text="${contacto.nombre}"></span>
+    </li>
+</ul>
+
+<h1>Proyectos</h1>
+<ul>
+    <li th:each="proyecto : ${proyectos}">
+        <span th:text="${proyecto.nombre}"></span>
+    </li>
+</ul>
+
+<h1>Lenguajes</h1>
+<ul>
+    <li th:each="lenguaje : ${lenguajes}">
+        <span th:text="${lenguaje.nombre}"></span>
+    </li>
+</ul>
+
+<h1>Educaciones</h1>
+<ul>
+    <li th:each="educacion : ${educaciones}">
+        <span th:text="${educacion.centro}"></span>
+    </li>
+</ul>
+</body>
+</html>
